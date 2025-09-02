@@ -1,0 +1,108 @@
+/* Books catalogue */
+.books-catalogue { padding: $space-4 0; }
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book-card {
+    background: $color-white;
+    border-radius: $radius-md;
+    overflow: hidden;
+    @include shadow($shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover { transform: translateY(-5px); }
+
+.book-cover { width: 100%; height: 300px; object-fit: cover; }
+
+.book-info { padding: 1.5rem; text-align: center; }
+.book-info h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: $color-charcoal; }
+.book-info p { color: $color-charcoal-2; margin-bottom: 1rem; }
+.price { display: block; font-size: 1.2rem; font-weight: bold; color: $color-black; margin-bottom: 1rem; }
+
+/* Courses */
+.courses-section { padding: $space-4 0; }
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 2rem; }
+.course-card { background: $color-white; border-radius: $radius-lg; overflow: hidden; @include shadow($shadow-lg); transition: transform 0.3s ease; }
+.course-card:hover { transform: translateY(-10px); }
+.course-image { width: 100%; height: 250px; object-fit: cover; }
+.course-info { padding: 2rem; }
+.course-info h3 { font-size: 1.8rem; margin-bottom: 1rem; color: $color-charcoal; }
+.course-description { color: #555; margin-bottom: 1.5rem; line-height: 1.6; }
+.course-features { list-style: none; margin-bottom: 1.5rem; }
+.course-features li { padding: 0.5rem 0; color: $color-charcoal-2; position: relative; padding-left: 1.5rem; }
+.course-features li::before { content: "✓"; position: absolute; left: 0; color: $color-black; font-weight: bold; }
+.course-price { display: block; font-size: 1.5rem; font-weight: bold; color: $color-black; margin-bottom: 1rem; }
+
+/* Benefits */
+.course-benefits { padding: $space-6 0; text-align: center; }
+.course-benefits h2 { font-size: 2.5rem; margin-bottom: 3rem; color: $color-charcoal; }
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.benefit-item { background: $color-white; padding: 2rem; border-radius: $radius-md; @include shadow($shadow-md); }
+.benefit-item h3 { font-size: 1.3rem; margin-bottom: 1rem; color: $color-charcoal; }
+.benefit-item p { color: $color-charcoal-2; }
+
+/* About */
+.about-content { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; padding: 2rem 0; }
+.about-text p { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; color: #555; }
+.about-stats { display: flex; flex-direction: column; gap: 2rem; }
+.stat-item { text-align: center; background: $color-white; padding: 2rem; border-radius: $radius-md; @include shadow($shadow-md); }
+.stat-item h3 { font-size: 2.5rem; color: $color-black; margin-bottom: 0.5rem; }
+.stat-item p { color: $color-charcoal-2; font-size: 1.1rem; }
+
+/* Contact */
+.contact-section { padding: $space-4 0; }
+.contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+.contact-info h2, .contact-form-container h2 { font-size: 2rem; margin-bottom: 2rem; color: $color-charcoal; }
+.contact-details { display: grid; gap: 1.5rem; }
+.contact-item { background: $color-white; padding: 1.5rem; border-radius: $radius-md; @include shadow($shadow-md); }
+.contact-item h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: $color-charcoal; }
+.contact-item p { color: $color-charcoal-2; line-height: 1.6; }
+.contact-form { background: $color-white; padding: 2rem; border-radius: $radius-lg; @include shadow($shadow-lg); }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: $color-charcoal; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 2px solid $color-gray-2; border-radius: $radius-sm; font-size: 1rem; font-family: $font-primary; transition: border-color 0.3s ease; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: $color-black; }
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+/* Parallax */
+.parallax-section { position: relative; height: 60vh; min-height: 400px; margin-top: 3rem; margin-bottom: 3rem; overflow: hidden; border-radius: 16px; background: linear-gradient(180deg, $color-cream 0%, $color-cream-3 100%); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+.parallax-scene { position: relative; width: 100%; height: 100%; transform: translateZ(0); }
+.parallax-layer { position: absolute; will-change: transform; }
+.layer-store, .layer-house { bottom: 0; }
+.layer-store { left: 2%; }
+.layer-house { right: 2%; }
+.store-img, .house-img { width: 180px; height: auto; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2)); }
+.book-sprite { width: 90px; height: auto; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15)); animation: bookFloat 4s ease-in-out infinite; }
+.book-1 { top: 45%; left: 16%; }
+.book-2 { top: 35%; left: 10%; }
+.book-3 { top: 55%; left: 22%; }
+
+@keyframes bookFloat { 0% { transform: translateY(0); } 50% { transform: translateY(-6px); } 100% { transform: translateY(0); } }
+
+/* Responsive */
+@include respond(md) {
+    .nav-container { flex-direction: column; gap: 1rem; }
+    .nav-menu { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .hero-title { font-size: 2.5rem; }
+    .page-title { font-size: 2rem; }
+    .about-content, .contact-container { grid-template-columns: 1fr; gap: 2rem; }
+    .courses-grid { grid-template-columns: 1fr; }
+    .book-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .main-content { padding: 1rem; }
+    .store-img, .house-img { width: 140px; }
+    .book-sprite { width: 70px; }
+}
+
+@include respond(sm) {
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1.2rem; }
+    .book-grid { grid-template-columns: 1fr; }
+    .nav-menu { flex-direction: column; gap: 0.5rem; }
+}
+

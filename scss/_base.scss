@@ -1,0 +1,43 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $color-cream;
+    color: $color-charcoal;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: $font-display;
+}
+
+/* Buttons */
+.btn { @include button($color-black); }
+
+.btn-primary {
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: $color-black;
+    color: $color-white;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Tu Librería Online</title>
+    <meta name="description" content="Contáctanos: email, teléfono, dirección y horarios de Tu Librería Online.">
+    <link rel="canonical" href="https://www.ejemplo.com/contactanos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contáctanos - Tu Librería Online">
+    <meta property="og:description" content="Contáctanos: email, teléfono, dirección y horarios de Tu Librería Online.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1200&q=60">
+    <meta property="og:url" content="https://www.ejemplo.com/contactanos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contáctanos - Tu Librería Online">
+    <meta name="twitter:description" content="Contáctanos: email, teléfono, dirección y horarios de Tu Librería Online.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1200&q=60">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Tu Librería Online</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="quienes-somos.html" class="nav-link">Quienes Somos</a></li>
+                <li><a href="tus-libros.html" class="nav-link">Tus Libros</a></li>
+                <li><a href="cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="contactanos.html" class="nav-link active">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <h1 class="page-title">Contáctanos</h1>
+            <p class="page-description">¿Tienes alguna pregunta? Estamos aquí para ayudarte</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>info@tulibreriaonline.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📞 Teléfono</h3>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📍 Dirección</h3>
+                            <p>Av. Corrientes 1234<br>Buenos Aires, Argentina</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕒 Horarios</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject">
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="pedido">Estado de pedido</option>
+                                <option value="cursos">Información sobre cursos</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tu Librería Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html> 

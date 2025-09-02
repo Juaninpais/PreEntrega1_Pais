@@ -1,0 +1,44 @@
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: $space-6 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: $color-charcoal;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: $color-charcoal-2;
+    font-weight: 300;
+}
+
+.hero-image { margin: 2rem 0; }
+
+.book-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: $radius-md;
+    box-shadow: $shadow-img;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+/* Page headers */
+.page-header { text-align: center; padding: 3rem 0; }
+.page-title { font-size: 3rem; margin-bottom: 1rem; color: $color-charcoal; }
+.page-subtitle { font-size: 1.5rem; color: $color-charcoal-2; font-weight: 300; }
+.page-description { font-size: 1.2rem; color: #555; margin-top: 1rem; }
+

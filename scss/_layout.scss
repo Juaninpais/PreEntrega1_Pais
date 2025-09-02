@@ -1,0 +1,60 @@
+/* Navigation */
+.navbar {
+    background-color: $color-white;
+    @include shadow($shadow-sm);
+    padding: $space-2 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: $font-display;
+    font-size: 1.8rem;
+    color: $color-charcoal;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $color-charcoal;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: $radius-sm;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+    background-color: $color-gray-1;
+}
+
+/* Main content */
+.main-content {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding: $space-4;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: $space-4;
+    margin-top: $space-6;
+}
+
